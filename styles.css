@@ -1,0 +1,149 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.photos img {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.motivational {
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#albums {
+    padding: 50px;
+    text-align: center;
+    background: #f0f0f5;
+}
+
+.album {
+    margin: 20px;
+    display: inline-block;
+    transition: transform 0.3s;
+    max-width: 90%;
+}
+
+.album:hover {
+    transform: scale(1.05);
+}
+
+.album-cover img {
+    width: 100%;
+    max-width: 200px; /* Limita el tamaño máximo de la imagen */
+    height: auto;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+
+#album-details {
+    padding: 50px;
+    background: linear-gradient(to right, #f8ffae, #43c6ac);
+}
+
+#album-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#album-details li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    transition: background-color 0.3s;
+}
+
+#album-details li:hover {
+    background-color: #e3e3e3;
+}
+
+#album-details img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+audio {
+    width: 100%;
+    outline: none;
+}
+
+h1 {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+button {
+    width: 100px;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .photos img {
+        width: 120px;
+    }
+
+    .motivational {
+        font-size: 1em;
+    }
+
+    #album-details li {
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 30px;
+    }
+
+    .photos img {
+        width: 100px;
+    }
+
+    .motivational {
+        font-size: 0.9em;
+    }
+
+    #album-details li {
+        width: 100px;
+    }
+}
